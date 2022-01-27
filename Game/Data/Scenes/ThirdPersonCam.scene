@@ -1,0 +1,98 @@
+{
+    "PhysicsWorld": {
+        "Exists": true,
+        "Gravity": [0.0, -10.0, 0.0],
+        "XZPlane": false
+    },
+    "GameObjects": [{
+            "Name": "Camera",
+            "GameObjectComponents": [{
+                    "Type": "TransformComponent",
+                    "Pos": [0.0, 4.528237819671631, -8.843713760375977],
+                    "Rot": [-26.0529842376709, 0.0, 0.0],
+                    "Scale": [1.0, 1.0, 1.0]
+                }, {
+                    "Type": "CameraComponent",
+                    "ProjectionScale": [5.0, 5.0],
+                    "CameraView": 1
+                }, {
+                    "Type": "OrbitComponent"
+                }]
+        }, {
+            "Name": "Player",
+            "GameObjectComponents": [{
+                    "Type": "TransformComponent",
+                    "Pos": [0.0, 0.0, 0.0],
+                    "Rot": [0.0, 0.0, 0.0],
+                    "Scale": [1.0, 1.0, 1.0]
+                }, {
+                    "Type": "MeshComponent",
+                    "Mesh": "Cube",
+                    "Material": "DeferredLit",
+                    "Hidden": false,
+                    "HideOnPlay": false
+                }, {
+                    "Type": "Movement3DComponent"
+                }]
+        }, {
+            "Name": "PointLight",
+            "GameObjectComponents": [{
+                    "Type": "TransformComponent",
+                    "Pos": [3.4700000286102297, 1.2740000486373902, 3.3489999771118166],
+                    "Rot": [0.0, 0.0, 0.0],
+                    "Scale": [1.0, 1.0, 1.0]
+                }, {
+                    "Type": "PointLightComponent",
+                    "Color": [0.779411792755127, 0.41262978315353396, 0.41262978315353396],
+                    "LightType": 0,
+                    "Intensity": 1.0,
+                    "Range": 5.0,
+                    "Attenuation": 1.0,
+                    "Ambient": 0.009999999776482582,
+                    "Specularity": 1.0
+                }, {
+                    "Type": "MeshComponent",
+                    "Mesh": "Icon_PointLight",
+                    "Material": "White",
+                    "Hidden": false,
+                    "HideOnPlay": true
+                }]
+        }, {
+            "Name": "Ground",
+            "GameObjectComponents": [{
+                    "Type": "TransformComponent",
+                    "Pos": [0.0, -0.7466106414794922, 0.0],
+                    "Rot": [0.0, 0.0, 0.0],
+                    "Scale": [20.0, 0.10000000149011612, 20.0]
+                }, {
+                    "Type": "MeshComponent",
+                    "Mesh": "Cube",
+                    "Material": "DeferredLit",
+                    "Hidden": false,
+                    "HideOnPlay": false
+                }]
+        }, {
+            "Name": "PointLight(4)",
+            "GameObjectComponents": [{
+                    "Type": "TransformComponent",
+                    "Pos": [-3.25, 0.44999998807907107, 0.0],
+                    "Rot": [0.0, 0.0, 0.0],
+                    "Scale": [1.0, 1.0, 1.0]
+                }, {
+                    "Type": "PointLightComponent",
+                    "Color": [1.0, 1.0, 1.0],
+                    "LightType": 0,
+                    "Intensity": 1.0,
+                    "Range": 5.0,
+                    "Attenuation": 1.0,
+                    "Ambient": 0.009999999776482582,
+                    "Specularity": 1.0
+                }, {
+                    "Type": "MeshComponent",
+                    "Mesh": "Icon_PointLight",
+                    "Material": "White",
+                    "Hidden": false,
+                    "HideOnPlay": true
+                }]
+        }]
+}

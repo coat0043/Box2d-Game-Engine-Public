@@ -1,0 +1,15 @@
+[submodule "Framework/Libraries/imgui"]
+	path = Framework/Libraries/imgui
+	url = https://github.com/ocornut/imgui.git
+[submodule "Framework/Libraries/stb"]
+	path = Framework/Libraries/stb
+	url = https://github.com/nothings/stb.git
+[submodule "Framework/Libraries/rapidjson"]
+	path = Framework/Libraries/rapidjson
+	url = https://github.com/Tencent/rapidjson.git
+[submodule "Framework/Libraries/box2d"]
+	path = Framework/Libraries/box2d
+	url = https://github.com/erincatto/box2d.git
+[submodule "Framework/Libraries/ImFileDialog"]
+	path = Framework/Libraries/ImFileDialog
+	url = https://github.com/dfranx/ImFileDialog.git

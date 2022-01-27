@@ -1,0 +1,108 @@
+{
+    "PhysicsWorld": {
+        "Exists": true,
+        "Gravity": [0.0, -10.0, 0.0],
+        "XZPlane": false
+    },
+    "GameObjects": [{
+            "Name": "Floor",
+            "GameObjectComponents": [{
+                    "Type": "TransformComponent",
+                    "Pos": [0.0, -0.699999988079071, 0.0],
+                    "Rot": [0.0, 0.0, -0.0],
+                    "Scale": [7.349999904632568, 1.0, 6.900000095367432]
+                }, {
+                    "Type": "MeshComponent",
+                    "Mesh": "Cube",
+                    "Material": "Lit",
+                    "Hidden": false,
+                    "HideOnPlay": false
+                }, {
+                    "Type": "CollisionComponent",
+                    "ShapeType": 1,
+                    "BodyType": 0,
+                    "Density": 1.0,
+                    "IsSensor": false,
+                    "Category": 1,
+                    "Mask": 65535
+                }]
+        }, {
+            "Name": "Camera",
+            "GameObjectComponents": [{
+                    "Type": "TransformComponent",
+                    "Pos": [-8.920938491821289, 3.9949729442596437, 4.7995758056640629],
+                    "Rot": [-13.830686569213868, 1320.1307373046876, 0.0],
+                    "Scale": [1.0, 1.0, 1.0]
+                }, {
+                    "Type": "CameraComponent",
+                    "ProjectionScale": [5.0, 5.0],
+                    "CameraView": 1
+                }]
+        }, {
+            "Name": "Cube",
+            "GameObjectComponents": [{
+                    "Type": "TransformComponent",
+                    "Pos": [1.4198971776124836e-8, 0.314998060464859, 0.0],
+                    "Rot": [0.0, 0.0, -0.000019464248907752336],
+                    "Scale": [1.0, 1.0, 1.0]
+                }, {
+                    "Type": "MeshComponent",
+                    "Mesh": "Cube",
+                    "Material": "Green",
+                    "Hidden": false,
+                    "HideOnPlay": false
+                }, {
+                    "Type": "CollisionComponent",
+                    "ShapeType": 1,
+                    "BodyType": 1,
+                    "Density": 1.0,
+                    "IsSensor": false,
+                    "Category": 1,
+                    "Mask": 65535
+                }, {
+                    "Type": "PhysicsMovementComponent"
+                }]
+        }, {
+            "Name": "GameObject(3)",
+            "GameObjectComponents": [{
+                    "Type": "TransformComponent",
+                    "Pos": [0.0, 2.8499999046325685, 0.0],
+                    "Rot": [0.0, 0.0, 0.0],
+                    "Scale": [3.1500000953674318, 1.0, 0.25]
+                }, {
+                    "Type": "MeshComponent",
+                    "Mesh": "Cube",
+                    "Material": "Orange",
+                    "Hidden": false,
+                    "HideOnPlay": false
+                }]
+        }, {
+            "Name": "Skybox",
+            "GameObjectComponents": [{
+                    "Type": "TransformComponent",
+                    "Pos": [2.799999952316284, 4.650000095367432, 0.0],
+                    "Rot": [0.0, 0.0, 0.0],
+                    "Scale": [1.0, 1.0, 1.0]
+                }, {
+                    "Type": "MeshComponent",
+                    "Mesh": "Skybox",
+                    "Material": "Skybox",
+                    "Hidden": false,
+                    "HideOnPlay": false
+                }]
+        }, {
+            "Name": "Sphere",
+            "GameObjectComponents": [{
+                    "Type": "TransformComponent",
+                    "Pos": [2.6500000953674318, 2.0, 0.0],
+                    "Rot": [0.0, 0.0, 0.0],
+                    "Scale": [1.0, 1.0, 1.0]
+                }, {
+                    "Type": "MeshComponent",
+                    "Mesh": "Sphere",
+                    "Material": "Shiny",
+                    "Hidden": false,
+                    "HideOnPlay": false
+                }]
+        }]
+}

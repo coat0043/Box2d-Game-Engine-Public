@@ -1,0 +1,209 @@
+{
+    "PhysicsWorld": {
+        "Exists": true,
+        "Gravity": [0.0, -10.0, 0.0]
+    },
+    "GameObjects": [{
+            "Name": "Camera",
+            "GameObjectComponents": [{
+                    "Type": "TransformComponent",
+                    "Pos": [10.658149719238282, 15.262533187866211, -43.1077995300293],
+                    "Rot": [-13.67471694946289, 9.302169799804688, 0.0],
+                    "Scale": [1.0, 1.0, 1.0]
+                }, {
+                    "Type": "CameraComponent",
+                    "ProjectionScale": [5.0, 5.0],
+                    "CameraView": 1
+                }]
+        }, {
+            "Name": "Default Values",
+            "GameObjectComponents": [{
+                    "Type": "TransformComponent",
+                    "Pos": [0.0, 0.0, 0.0],
+                    "Rot": [0.0, 0.0, 0.0],
+                    "Scale": [1.0, 1.0, 1.0]
+                }, {
+                    "Type": "MeshComponent",
+                    "Mesh": "Cube",
+                    "Material": "Orange"
+                }, {
+                    "Type": "ParticleEmitterComponent",
+                    "Location": [0.0, 0.0, 0.0],
+                    "Rotation": [90.0, 0.0, 0.0],
+                    "Scale": [0.5, 0.5],
+                    "RandomSpeedRange": [1.0, 10.0],
+                    "NewParticleTimerDuration": 0.25,
+                    "Speed": 5.0,
+                    "Lifespan": 3.0,
+                    "DelayDuration": 1.5,
+                    "EmissionDuration": 3.0,
+                    "EmissionWidth": 45.0,
+                    "Gravity": -9.800000190734864,
+                    "NumParticles": 1,
+                    "IsOn": true,
+                    "IsDelayed": false,
+                    "IsScaleNonUniform": false,
+                    "IsSpeedRandom": false,
+                    "IsLooping": true,
+                    "IsGravityEnabled": false,
+                    "Material": "Particle"
+                }]
+        }, {
+            "Name": "Slow Burst",
+            "GameObjectComponents": [{
+                    "Type": "TransformComponent",
+                    "Pos": [17.75, 0.0, 0.0],
+                    "Rot": [0.0, 0.0, 0.0],
+                    "Scale": [1.0, 1.0, 1.0]
+                }, {
+                    "Type": "MeshComponent",
+                    "Mesh": "Cube",
+                    "Material": "Orange"
+                }, {
+                    "Type": "ParticleEmitterComponent",
+                    "Location": [0.0, 0.0, 0.0],
+                    "Rotation": [90.0, 0.0, 0.0],
+                    "Scale": [0.8500000238418579, 0.4699999988079071],
+                    "RandomSpeedRange": [1.0, 10.0],
+                    "NewParticleTimerDuration": 1.5,
+                    "Speed": 3.299999952316284,
+                    "Lifespan": 6.0,
+                    "DelayDuration": 1.5,
+                    "EmissionDuration": 10.0,
+                    "EmissionWidth": 30.0,
+                    "Gravity": -9.800000190734864,
+                    "NumParticles": 10,
+                    "IsOn": true,
+                    "IsDelayed": false,
+                    "IsScaleNonUniform": true,
+                    "IsSpeedRandom": false,
+                    "IsLooping": true,
+                    "IsGravityEnabled": false,
+                    "Material": "Particle"
+                }]
+        }, {
+            "Name": "NonLoop / Delay / Gravity On",
+            "GameObjectComponents": [{
+                    "Type": "TransformComponent",
+                    "Pos": [-16.700000762939454, 0.0, 15.0],
+                    "Rot": [0.0, 0.0, 0.0],
+                    "Scale": [1.0, 1.0, 1.0]
+                }, {
+                    "Type": "MeshComponent",
+                    "Mesh": "Cube",
+                    "Material": "Orange"
+                }, {
+                    "Type": "ParticleEmitterComponent",
+                    "Location": [0.0, 0.0, 0.0],
+                    "Rotation": [90.0, 0.0, 0.0],
+                    "Scale": [0.3199999928474426, 0.3199999928474426],
+                    "RandomSpeedRange": [3.0, 9.0],
+                    "NewParticleTimerDuration": 0.0,
+                    "Speed": 10.399999618530274,
+                    "Lifespan": 2.0,
+                    "DelayDuration": 1.5,
+                    "EmissionDuration": 4.5,
+                    "EmissionWidth": 50.5,
+                    "Gravity": -9.800000190734864,
+                    "NumParticles": 5,
+                    "IsOn": true,
+                    "IsDelayed": true,
+                    "IsScaleNonUniform": false,
+                    "IsSpeedRandom": false,
+                    "IsLooping": false,
+                    "IsGravityEnabled": true,
+                    "Material": "Particle"
+                }]
+        }, {
+            "Name": "NonLoop / Diagonal",
+            "GameObjectComponents": [{
+                    "Type": "TransformComponent",
+                    "Pos": [7.5, 0.0, 15.0],
+                    "Rot": [0.0, 0.0, 0.0],
+                    "Scale": [1.0, 1.0, 1.0]
+                }, {
+                    "Type": "MeshComponent",
+                    "Mesh": "Cube",
+                    "Material": "Orange"
+                }, {
+                    "Type": "ParticleEmitterComponent",
+                    "Location": [0.0, 0.0, 0.0],
+                    "Rotation": [45.0, -45.0, 0.0],
+                    "Scale": [0.20000000298023225, 1.0],
+                    "RandomSpeedRange": [3.0, 12.0],
+                    "NewParticleTimerDuration": 0.15000000596046449,
+                    "Speed": 11.86220932006836,
+                    "Lifespan": 1.2999999523162842,
+                    "DelayDuration": 1.5,
+                    "EmissionDuration": 4.0,
+                    "EmissionWidth": 25.0,
+                    "Gravity": -9.800000190734864,
+                    "NumParticles": 6,
+                    "IsOn": true,
+                    "IsDelayed": false,
+                    "IsScaleNonUniform": true,
+                    "IsSpeedRandom": false,
+                    "IsLooping": false,
+                    "IsGravityEnabled": false,
+                    "Material": "Particle"
+                }]
+        }, {
+            "Name": "Delayed Sphere (No GO Mesh)",
+            "GameObjectComponents": [{
+                    "Type": "TransformComponent",
+                    "Pos": [35.0, 0.0, 15.0],
+                    "Rot": [0.0, 0.0, 0.0],
+                    "Scale": [1.0, 1.0, 1.0]
+                }, {
+                    "Type": "ParticleEmitterComponent",
+                    "Location": [0.0, 0.0, 0.0],
+                    "Rotation": [90.0, 0.0, 0.0],
+                    "Scale": [0.5, 0.5],
+                    "RandomSpeedRange": [1.0, 10.0],
+                    "NewParticleTimerDuration": 0.0,
+                    "Speed": 2.0,
+                    "Lifespan": 5.0,
+                    "DelayDuration": 3.0,
+                    "EmissionDuration": 10.0,
+                    "EmissionWidth": 360.0,
+                    "Gravity": -9.800000190734864,
+                    "NumParticles": 10,
+                    "IsOn": true,
+                    "IsDelayed": true,
+                    "IsScaleNonUniform": false,
+                    "IsSpeedRandom": false,
+                    "IsLooping": true,
+                    "IsGravityEnabled": false,
+                    "Material": "Particle"
+                }]
+        }, {
+            "Name": "Side Particles (No GO Mesh)",
+            "GameObjectComponents": [{
+                    "Type": "TransformComponent",
+                    "Pos": [-20.149999618530275, 0.0, 0.0],
+                    "Rot": [0.0, 0.0, 0.0],
+                    "Scale": [1.0, 1.0, 1.0]
+                }, {
+                    "Type": "ParticleEmitterComponent",
+                    "Location": [0.0, 0.0, 0.0],
+                    "Rotation": [0.0, 90.0, 0.0],
+                    "Scale": [0.25, 0.25],
+                    "RandomSpeedRange": [1.0, 10.0],
+                    "NewParticleTimerDuration": 0.0,
+                    "Speed": 4.194982528686523,
+                    "Lifespan": 3.0,
+                    "DelayDuration": 1.5,
+                    "EmissionDuration": 3.0,
+                    "EmissionWidth": 70.0,
+                    "Gravity": -9.800000190734864,
+                    "NumParticles": 1,
+                    "IsOn": true,
+                    "IsDelayed": false,
+                    "IsScaleNonUniform": false,
+                    "IsSpeedRandom": true,
+                    "IsLooping": true,
+                    "IsGravityEnabled": false,
+                    "Material": "Particle"
+                }]
+        }]
+}

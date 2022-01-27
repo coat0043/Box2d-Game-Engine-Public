@@ -1,0 +1,66 @@
+{
+    "PhysicsWorld": {
+        "Exists": true,
+        "Gravity": [0.0, 0.0, 0.0],
+        "XZPlane": true
+    },
+    "GameObjects": [{
+            "Name": "Camera",
+            "GameObjectComponents": [{
+                    "Type": "TransformComponent",
+                    "Pos": [10.34692096710205, 10.175543785095215, -19.07942008972168],
+                    "Rot": [-23.929908752441408, 24.09145164489746, 0.0],
+                    "Scale": [1.0, 1.0, 1.0]
+                }, {
+                    "Type": "CameraComponent",
+                    "ProjectionScale": [5.0, 5.0],
+                    "CameraView": 1
+                }]
+        }, {
+            "Name": "Floor",
+            "GameObjectComponents": [{
+                    "Type": "TransformComponent",
+                    "Pos": [0.6002531051635742, 0.0, -1.645721435546875],
+                    "Rot": [-90.0, 0.0, 0.0],
+                    "Scale": [10.0, 1.0, 1.0]
+                }, {
+                    "Type": "MeshComponent",
+                    "Mesh": "Sprite",
+                    "Material": "Orange",
+                    "Hidden": false,
+                    "HideOnPlay": false
+                }, {
+                    "Type": "CollisionComponent",
+                    "ShapeType": 1,
+                    "BodyType": 0,
+                    "Density": 1.0,
+                    "IsSensor": false,
+                    "Category": 1,
+                    "Mask": 65535
+                }]
+        }, {
+            "Name": "Player",
+            "GameObjectComponents": [{
+                    "Type": "TransformComponent",
+                    "Pos": [1.6145386695861817, 0.0, -5.312246322631836],
+                    "Rot": [-90.0, -57.0, 0.0],
+                    "Scale": [1.0, 1.0499999523162842, 1.0]
+                }, {
+                    "Type": "MeshComponent",
+                    "Mesh": "Sprite",
+                    "Material": "Orange",
+                    "Hidden": false,
+                    "HideOnPlay": false
+                }, {
+                    "Type": "CollisionComponent",
+                    "ShapeType": 1,
+                    "BodyType": 1,
+                    "Density": 1.0,
+                    "IsSensor": false,
+                    "Category": 1,
+                    "Mask": 65535
+                }, {
+                    "Type": "PhysicsMovementComponent"
+                }]
+        }]
+}
